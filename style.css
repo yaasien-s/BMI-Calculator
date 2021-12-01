@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@1,300&family=Poppins:wght@200&display=swap');
+
+body{
+    font-family: 'Noto Serif Display', serif;
+font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: #D3FAC7;
+}
+
+.container{
+    background-color: #ACC196;
+    width: 500px;
+    margin-top: 50px;
+    height: 410px;
+    border-radius: 20px;
+}
+/* #clear{
+    margin-left: 100px;
+} */
+#height{
+    border-radius: 5px;
+    background-color: transparent;
+
+}
+#weight{
+    border-radius: 5px;
+    background-color: transparent;
+}
+#age{
+    border-radius: 5px;
+    background-color: transparent;
+
+}
+#gndr{
+    border-radius: 5px;
+    background-color: transparent;
+
+}
+#bmi{
+    margin-left: 120px;
+}
+
+@media (max-width:600px){
+    .container{
+        width: 300px;
+        height: 440px;
+    }
+    #gndr{
+        margin-bottom: 20px;
+    }
+    #bmi{
+        margin-left: 30px;
+    }
+}
