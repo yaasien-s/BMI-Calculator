@@ -4,10 +4,15 @@ let comment = document.getElementById('comment');
 function myBMI(){
     let w = document.getElementById("weight").value;
     let h = document.getElementById("height").value;
+	let a = document.getElementById('age').value;
+
+	if(!w || !h || !a) {
+		alert("Please fill in all fields")
+		return;
+	}
     let ans = w/(h**2);
     document.getElementById("outputBmi").innerHTML = `Your BMI is ${ans}`
     
-    let age = document.getElementById('age')
 
     if(document.getElementById('gndr').value == 'male'){
         let ansMale = 0.5*ans + 11.5;
@@ -52,19 +57,3 @@ function clear_inputs(){
     idealBmi.innerText = "";
     comment.innerText = "";
 }
-
-(function () {
-    'use strict'
-    const forms = document.querySelectorAll('.requires-validation')
-    Array.from(forms)
-      .forEach(function (form) {
-        form.addEventListener('submit', function (event) {
-          if (!form.checkValidity()) {
-            event.preventDefault()
-            event.stopPropagation()
-          }
-  
-          form.classList.add('was-validated')
-        }, false)
-      })
-  })()
