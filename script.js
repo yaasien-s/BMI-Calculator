@@ -18,8 +18,8 @@ function myBMI(){
         let ansMale = 0.5*ans + 11.5;
         idealBmi.innerHTML = `Ideal BMI is ${ansMale}`
     }else if(document.getElementById('gndr').value == 'female'){
-        let ansMale = 0.5*ans + 0.03*age.value + 11;
-        idealBmi.innerHTML = `Ideal BMI is ${ansMale}`
+        let ansFemale = 0.5*ans + 0.03*age.value + 11;
+        idealBmi.innerHTML = `Ideal BMI is ${ansFemale}`
     }
 
 
